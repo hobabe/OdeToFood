@@ -14,7 +14,7 @@ namespace OdeToFood.Pages.Restaurents
         public string Message { get; set; }
         public string MessageFromAppsettings { get; set; }
 
-        private IEnumerable<Restaurant> restaurants;
+        public IEnumerable<Restaurant> Restaurants;
 
         public ListModel(IConfiguration config, IRestaurantData restaurantData)
         {
@@ -27,7 +27,7 @@ namespace OdeToFood.Pages.Restaurents
             Message = "Hello, world!";
             MessageFromAppsettings = config["Message"];
 
-            restaurants = restaurantData.GetAll();
+            Restaurants = restaurantData.GetAll();
         }
     }
 }
