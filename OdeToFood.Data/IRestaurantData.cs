@@ -32,7 +32,7 @@ namespace OdeToFood.Data
         public IEnumerable<Restaurant> GetRestaurantsByName(string name = null)
         {
             return from r in restaurants
-                   where string.IsNullOrEmpty(name) || r.Name == name
+                   where string.IsNullOrEmpty(name) || r.Name.StartsWith(name)
                    orderby r.Name
                    select r;
         }

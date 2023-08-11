@@ -22,12 +22,12 @@ namespace OdeToFood.Pages.Restaurents
             this.restaurantData = restaurantData;
         }
 
-        public void OnGet()
+        public void OnGet(string searchTerm)
         {
             Message = "Hello, world!";
             MessageFromAppsettings = config["Message"];
 
-            Restaurants = restaurantData.GetAll();
+            Restaurants = restaurantData.GetRestaurantsByName(searchTerm);
         }
     }
 }
