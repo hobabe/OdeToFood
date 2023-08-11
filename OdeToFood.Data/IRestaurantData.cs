@@ -8,6 +8,7 @@ namespace OdeToFood.Data
     {
         IEnumerable<Restaurant> GetAll();
         IEnumerable<Restaurant> GetRestaurantsByName(string name);
+        Restaurant GetById(int id);
     }
 
     public class InMemoryRestauranData : IRestaurantData
@@ -18,8 +19,8 @@ namespace OdeToFood.Data
             restaurants = new List<Restaurant>()
             {
                 new Restaurant(){ Id = 1, Name = "Scott's Pizza ", Location = "Maryland", Cuisine = CuisineType.Italian },
-                new Restaurant(){ Id = 1, Name = "Riaan's Mega ", Location = "Maryland", Cuisine = CuisineType.Mexican },
-                new Restaurant(){ Id = 1, Name = "Rajtha's Gold ", Location = "Maryland", Cuisine = CuisineType.Indian }
+                new Restaurant(){ Id = 2, Name = "Riaan's Mega ", Location = "Maryland", Cuisine = CuisineType.Mexican },
+                new Restaurant(){ Id = 3, Name = "Rajtha's Gold ", Location = "Maryland", Cuisine = CuisineType.Indian }
             };
         }
         public IEnumerable<Restaurant> GetAll()
@@ -27,6 +28,11 @@ namespace OdeToFood.Data
             return from r in restaurants
                    orderby r.Name
                    select r;
+        }
+
+        public Restaurant GetById(int id)
+        {
+            return restaurants.SingleOrDefault(r => r.Id == id);
         }
 
         public IEnumerable<Restaurant> GetRestaurantsByName(string name = null)
