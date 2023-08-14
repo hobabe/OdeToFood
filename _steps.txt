@@ -3,3 +3,5 @@ S1 - Working with HTML Forms
 
 Section 2 ===== Working with Models and Model Binding ===== DONE
 Section 3 ===== Editing Data with Razor Pages ===== DONE
+
+S3 Using the Entity Framework Tools
