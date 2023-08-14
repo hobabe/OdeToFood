@@ -5,3 +5,6 @@ Section 2 ===== Working with Models and Model Binding ===== DONE
 Section 3 ===== Editing Data with Razor Pages ===== DONE
 
 S3 Using the Entity Framework Tools
+	dotnet ef < not available
+S4 Using Other Databases and Tools
+	SQL Server Object Explore
