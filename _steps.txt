@@ -8,3 +8,6 @@ S3 Using the Entity Framework Tools
 	dotnet ef < not available
 S4 Using Other Databases and Tools
 	SQL Server Object Explore
+----------------------
+Section 4 Working with SQL Server and the Entity Framework Core
+	S7 Running Database Migrations
