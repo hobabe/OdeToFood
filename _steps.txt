@@ -17,3 +17,5 @@ Section 4 ===== Working with SQL Server and the Entity Framework Core  ===== DON
 	Note: (AddSingleton, AddScoped)
 		services.AddSingleton<IRestaurantData, InMemoryRestauranData>();
         services.AddScoped<IRestaurantData, SqlRestaurantData>();
+----------------------
+Section 5 ===== Building the User Interface ====== DONE
