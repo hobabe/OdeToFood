@@ -23,3 +23,8 @@ Section 5 ===== Building the User Interface ====== DONE
 Section 6 ===== Intergaring Client-side Javascript and CSS
 	S1 Serving Static Files and Content from wwwroot
 		any file outside of wwwroot can not access via brouswer
+	
+	S2 Using ASP.NET Core Environments
+		1. Take a look "Properties/launchSettings.json" (Presentation)
+		2. the "_Layout.cshtml" file can be add "<environtment>" tag
+
