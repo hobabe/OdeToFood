@@ -11,3 +11,9 @@ S4 Using Other Databases and Tools
 ----------------------
 Section 4 Working with SQL Server and the Entity Framework Core
 	S7 Running Database Migrations
+
+
+Section 4 ===== Working with SQL Server and the Entity Framework Core  ===== DONE
+	Note: (AddSingleton, AddScoped)
+		services.AddSingleton<IRestaurantData, InMemoryRestauranData>();
+        services.AddScoped<IRestaurantData, SqlRestaurantData>();
