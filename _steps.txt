@@ -19,3 +19,7 @@ Section 4 ===== Working with SQL Server and the Entity Framework Core  ===== DON
         services.AddScoped<IRestaurantData, SqlRestaurantData>();
 ----------------------
 Section 5 ===== Building the User Interface ====== DONE
+----------------------
+Section 6 ===== Intergaring Client-side Javascript and CSS
+	S1 Serving Static Files and Content from wwwroot
+		any file outside of wwwroot can not access via brouswer
