@@ -43,6 +43,13 @@ DONE
 Section 8 ====== Deploying ASP.NET Core Web Applications ======
 	S1 Publish Apps vs. Deploying Apps
 		Publish for prepareing Deployment
+	S2 Using dotnet publish
+		dotnet publish --help
+		dotnet publish -o "<output dir>"
+		dir "folder"
+		pushd "<folder>" (this command is set active folder)
+		dotnet "<assymbly file>"
+
 
 	
 
