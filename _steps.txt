@@ -71,5 +71,13 @@ Section 8 ====== Deploying ASP.NET Core Web Applications ======
 		cmd: dotnet ef migrations script -s ..\<>\OdeToFood.csproj > see migration script
 		>next
 		update program.cs for migrating
+	S8 Connecting to the SQL Server Database
+		Add new login and update connection take from "Sql server"
+			ex "IIS APPPOOL\OdeToFood" and 
+				grant permision with "dbcreator", "systemadmin"
+				
+		error: Failed to start application '/LM/W3SVC/6/ROOT/', ErrorCode '0x800700c1'. ( need same platform)			
+		We need recycle app pool to see effect after deploying
+		if server's using incorrect appsettings > check webconfig ensure "EnvironmentName" in webconfig does not equals "Development"
 
 
