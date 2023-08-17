@@ -5,6 +5,9 @@
 
 <h2>Client Restaurants</h2>
 
+<table class="table" id="restaurants">
+
+</table>
 @section Scripts {
 
     <environment include="Development">
@@ -22,8 +25,26 @@
             $.ajax("/api/restaurants/",
                 { method: "GET" })
                 .then(function (response) {
-                    console.log(response);
+                    renderTable("#restaurants", response);
                 })
+
+            function renderTable(tableId, response) {
+                var cuisinses = ["Unknown", "Mexican", "Italian", "Indian"];
+
+                $(tableId).dataTable({
+                    data: response,
+                    columns: [
+                        {"data": "name"},
+                        {"data": "location"},
+                        {
+                            "data": "cuisine",
+                            "render": function (data) {
+                                return cuisinses[data];
+                            }
+                        }
+                    ]
+                })
+            }
         })
     </script>
 }
