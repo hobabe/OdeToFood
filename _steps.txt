@@ -40,4 +40,9 @@ Section 7 ===== Wokring with the Internals of APS.NET Core =====
 		
 DONE
 ----------------------
+Section 8 ====== Deploying ASP.NET Core Web Applications ======
+	S1 Publish Apps vs. Deploying Apps
+		Publish for prepareing Deployment
+
+	
 
