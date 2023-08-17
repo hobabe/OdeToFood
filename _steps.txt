@@ -63,5 +63,9 @@ Section 8 ====== Deploying ASP.NET Core Web Applications ======
 			add new site, update path which is contained deployed folder
 			set SSL with "SSL certificate" is "IIS Express Development Certificate"
 		5. access the web app
+	S6 Exploring web.config and How IIS Hosting Works
+		cmd: code web.config > open web.config with visual code application
+		cmd: odetofood > run and see odetofood web status (no ssl)
+			ctr+c to shutdown app (not iis, it still running with SSL)
 
 
