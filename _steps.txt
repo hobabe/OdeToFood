@@ -34,3 +34,6 @@ Section 7 Wokring with the Internals of APS.NET Core
 	S1 Expploring the Application Entry Point
 	S2 Processing Summer Corn with the Allen Family
 		The Summer Corn story to Middlewear
+	S3 Exploring the Application Middlewear
+		Some Middlewears in Configure function of Startup.cs file.
+		//more is app.UseSpa() 'single page', app.UseAuthentication(), app.UseSigalR()...
