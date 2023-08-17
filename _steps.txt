@@ -28,3 +28,5 @@ Section 6 ===== Intergaring Client-side Javascript and CSS
 		1. Take a look "Properties/launchSettings.json" (Presentation)
 		2. the "_Layout.cshtml" file can be add "<environtment>" tag
 
+DONE
+----------------------
