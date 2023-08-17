@@ -49,6 +49,8 @@ Section 8 ====== Deploying ASP.NET Core Web Applications ======
 		dir "folder"
 		pushd "<folder>" (this command is set active folder)
 		dotnet "<assymbly file>"
+	S3 Using MSBuild To Execute npm install
+		popd (this command to use go back to the previous path
 
 
 	
