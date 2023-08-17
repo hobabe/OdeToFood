@@ -67,5 +67,9 @@ Section 8 ====== Deploying ASP.NET Core Web Applications ======
 		cmd: code web.config > open web.config with visual code application
 		cmd: odetofood > run and see odetofood web status (no ssl)
 			ctr+c to shutdown app (not iis, it still running with SSL)
+	S7 Setting up Automatic Entity Framework Migrations
+		cmd: dotnet ef migrations script -s ..\<>\OdeToFood.csproj > see migration script
+		>next
+		update program.cs for migrating
 
 
