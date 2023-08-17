@@ -52,8 +52,16 @@ Section 8 ====== Deploying ASP.NET Core Web Applications ======
 	S3 Using MSBuild To Execute npm install
 		popd (this command to use go back to the previous path
 	S4 Building Self-contained Applications
-		dotnet publish -o "<path/odetofood>" --self-contained -r -win-x64
+		dotnet publish -o "<path/odetofood>" --self-contained -r win-x64
+	S5 Deploying to a Web Server
+		1. install suitable Hostbudle for .Net version that we are specifing
+			//check it in IIS "Modules > AspNetCoreModuleV2"
+		2. change get data object from "SqlRestaurantData" to "InMemoryRestauranData"
+		3. deploying again
+			//stop IIS if deploying message tell us file be using by another processing.
+		4. config web on IIS:
+			add new site, update path which is contained deployed folder
+			set SSL with "SSL certificate" is "IIS Express Development Certificate"
+		5. access the web app
 
-
-	
 
