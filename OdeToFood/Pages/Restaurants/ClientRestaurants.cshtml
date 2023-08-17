@@ -5,8 +5,11 @@
 
 <h2>Client Restaurants</h2>
 
-<table class="table" id="restaurants">
+<p>
+    <a asp-page="./List" class="btn btn-outline-info">Switch to Details view</a>
+</p>
 
+<table class="table" id="restaurants">
 </table>
 @section Scripts {
 
@@ -15,7 +18,7 @@
         <script src="~/node_modules\datatables.net-bs4\js\dataTables.bootstrap4.js"></script>
         <link href="~/node_modules\datatables.net-bs4\css\dataTables.bootstrap4.css" rel="stylesheet" />
     </environment>
-    
+
     <environment exclude="Development">
         <link href="https://cdn.datatables.net/v/bs4/dt-1.13.6/datatables.min.css" rel="stylesheet">
         <script src="https://cdn.datatables.net/v/bs4/dt-1.13.6/datatables.min.js"></script>
@@ -34,8 +37,8 @@
                 $(tableId).dataTable({
                     data: response,
                     columns: [
-                        {"data": "name"},
-                        {"data": "location"},
+                        { "data": "name" },
+                        { "data": "location" },
                         {
                             "data": "cuisine",
                             "render": function (data) {

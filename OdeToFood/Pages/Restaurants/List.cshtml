@@ -3,12 +3,21 @@
 @{
 }
 <h1>Restaurants</h1>
+@Model.Message
+<div class="row mt-1">
+    <p class="col-6">
+        <a asp-page="./ClientRestaurants" class="btn btn-outline-info">Switch to list view</a>
+    </p>
+    <p class="col-6 d-flex justify-content-end">
+        <a asp-page="./Edit" class="btn btn-primary">Add new</a>
+    </p>
+</div>
 
 <form method="get">
     <div class="form-group">
         <div class="input-group">
-            <input type="search" class="form-control" 
-                   asp-for="SearchTerm"/>
+            <input type="search" class="form-control"
+                   asp-for="SearchTerm" />
             <span class="input-group-append">
                 <button class="btn btn-outline-primary">
                     Search
@@ -18,18 +27,11 @@
     </div>
 </form>
 
-@foreach(var restaurant in Model.Restaurants) 
-{ 
+@foreach (var restaurant in Model.Restaurants)
+{
     <partial name="_Sumary" model="restaurant" />
 }
 
-<br />
-<a asp-page="./Edit" class="btn btn-primary">Add new</a>
-
-<hr />
-@Model.Message
-
 @section footer {
-    <br />
     @Model.MessageFromAppsettings
 }

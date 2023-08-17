@@ -6,7 +6,6 @@ using Microsoft.Extensions.Hosting;
 using OdeToFood.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Http;
-using System;
 
 namespace OdeToFood
 {

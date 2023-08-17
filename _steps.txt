@@ -1,24 +1,33 @@
-Step - Drilling into Data - DONE
-S1 - Working with HTML Forms
+Section 1 ===== Drilling into Data - DONE
+	S1 - Working with HTML Forms
+DONE
 
-Section 2 ===== Working with Models and Model Binding ===== DONE
-Section 3 ===== Editing Data with Razor Pages ===== DONE
-
-S3 Using the Entity Framework Tools
-	dotnet ef < not available
-S4 Using Other Databases and Tools
-	SQL Server Object Explore
 ----------------------
-Section 4 Working with SQL Server and the Entity Framework Core
+Section 2 ===== Working with Models and Model Binding ===== DONE
+DONE
+
+----------------------
+Section 3 ===== Editing Data with Razor Pages ===== DONE
+	S3 Using the Entity Framework Tools
+		dotnet ef < not available
+	S4 Using Other Databases and Tools
+		SQL Server Object Explore
+DONE
+
+----------------------
+Section ===== 4 Working with SQL Server and the Entity Framework Core
 	S7 Running Database Migrations
 
 
-Section 4 ===== Working with SQL Server and the Entity Framework Core  ===== DONE
 	Note: (AddSingleton, AddScoped)
 		services.AddSingleton<IRestaurantData, InMemoryRestauranData>();
         services.AddScoped<IRestaurantData, SqlRestaurantData>();
+DONE
+
 ----------------------
 Section 5 ===== Building the User Interface ====== DONE
+DONE
+
 ----------------------
 Section 6 ===== Intergaring Client-side Javascript and CSS
 	S1 Serving Static Files and Content from wwwroot
@@ -29,6 +38,7 @@ Section 6 ===== Intergaring Client-side Javascript and CSS
 		2. the "_Layout.cshtml" file can be add "<environtment>" tag
 
 DONE
+
 ----------------------
 Section 7 ===== Wokring with the Internals of APS.NET Core ===== 
 	S1 Expploring the Application Entry Point
@@ -39,6 +49,7 @@ Section 7 ===== Wokring with the Internals of APS.NET Core =====
 		//more is app.UseSpa() 'single page', app.UseAuthentication(), app.UseSigalR()...
 		
 DONE
+
 ----------------------
 Section 8 ====== Deploying ASP.NET Core Web Applications ======
 	S1 Publish Apps vs. Deploying Apps
@@ -80,4 +91,4 @@ Section 8 ====== Deploying ASP.NET Core Web Applications ======
 		We need recycle app pool to see effect after deploying
 		if server's using incorrect appsettings > check webconfig ensure "EnvironmentName" in webconfig does not equals "Development"
 
-
+DONE
