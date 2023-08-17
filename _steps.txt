@@ -51,6 +51,8 @@ Section 8 ====== Deploying ASP.NET Core Web Applications ======
 		dotnet "<assymbly file>"
 	S3 Using MSBuild To Execute npm install
 		popd (this command to use go back to the previous path
+	S4 Building Self-contained Applications
+		dotnet publish -o "<path/odetofood>" --self-contained -r -win-x64
 
 
 	
