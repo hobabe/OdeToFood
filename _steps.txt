@@ -30,3 +30,5 @@ Section 6 ===== Intergaring Client-side Javascript and CSS
 
 DONE
 ----------------------
+Section 7 Wokring with the Internals of APS.NET Core
+	S1 Expploring the Application Entry Point
